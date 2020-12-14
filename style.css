@@ -1,16 +1,5 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body, div, ul, li
+ {
     margin: 0;
     padding: 0;
     border: 0;
@@ -20,21 +9,18 @@ time, mark, audio, video {
 }
 
 body {
-    line-height: 1;
     font-family: arial, sans-serif;
 }
-ol, ul {
-    list-style: none;
-    
+
+ul {
+    list-style: none;  
 }
 
-*{
-    box-sizing: border-box;
-    max-width: 100%;
-}
+/* ---- nav ---- */
+
 
 nav{
-    margin-top: 15px;
+    margin: 15px 10px 0px 10px;
 }
 
 .Nav {
@@ -51,7 +37,7 @@ nav{
     margin-right: auto;
 }
 
-li {  
+nav ul li {  
     display: inline;
     padding: 10px;
 }
@@ -63,15 +49,23 @@ li a {
     font-size: 13px;
 }
 
+li a:hover{
+    text-decoration: underline;
+}
+
 .drive_img{
     border-radius: 50%;
 }
 
+
+/* ---- Main ---- */
+
+
 .logo {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 /* .share {
@@ -80,32 +74,109 @@ li a {
     margin-right: 200px;
 } */
 
-#input_container {
-    position: relative;
-    text-align: center;
+form {
+    display: flex;
+    justify-content: center;
 }
 
-#input {
-    height: 40px;
-    border: 1px solid rgb(147, 145, 145);
+input {
+    height: 45px;
+    border: 1px solid rgb(210, 208, 208);
     border-radius: 25px;
     width: 450px;
     opacity: 0.75;
-    background-image: url('/GoogleMic.png');
+    padding: 0px 40px;
+    background-image: url('MagGlass.png');
+    background-position: 13px 13px;
     background-repeat: no-repeat;
-    background-position: right;
     background-size: 20px;
+    
 }
 
-.input_img1 {
-    position: absolute;
-    width: 15px;
-    top: 12px;
-    left: 15px;
+.mic {
+    transform: translate(-35px, 60%);
+    height: 20px;
 }
 
-/* .input_img2 {
-    position: absolute;
-    float: right;
+.mic:hover {
+    cursor: pointer;
+}
+
+input:hover {
+    box-shadow: 0px 0px 4px 2px rgba(199, 198, 198, 0.67);
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.button {
+    border: none;
+    background-color: #f8f9fa; 
+    /* padding: 10px;
+    margin: 5px; */
+    font-size: 14px;
+    height: 36px;
+    text-align: center;
+    cursor: pointer;
+    padding: 0 16px;
+    margin: 11px 4px;
+    min-width: 54px;
+    color: #3c4043;
+}
+
+.button:hover{
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.1);
+    color: #202124;
+    border: 1px solid #dadce0;
+}
+
+
+/* ---- Footer ---- */
+
+
+footer {
+    position: fixed;
+    width: 100%;
+    background-color: #f2f2f2;
+    left: 0;
+    bottom: 0;
+    border-top: 1px solid #dadce0;
+    line-height: 40px;
+}
+
+.footer_ul {
+    display: flex;
+}
+
+.carbon {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.leaf {
     width: 15px;
-} */
+    padding-right: 8px;
+}
+
+footer ul li {
+    display: inline;
+    padding: 0 5px;
+}
+
+footer ul li a{
+    font-size: 14px;
+    color: #686d71;
+}
+
+.advertising {
+    padding-left: 27px;
+    margin: 0 !important;
+}
+
+.settings {
+    padding-right: 27px;
+}
+
