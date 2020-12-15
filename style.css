@@ -4,8 +4,6 @@ html, body, div, ul, li
     padding: 0;
     border: 0;
 	font-size: 62.5%;
-	font: inherit;
-	vertical-align: baseline;
 }
 
 body {
@@ -68,12 +66,6 @@ li a:hover{
     padding-bottom: 50px;
 }
 
-/* .share {
-    display: block;
-    float: right;
-    margin-right: 200px;
-} */
-
 form {
     display: flex;
     justify-content: center;
@@ -90,7 +82,6 @@ input {
     background-position: 13px 13px;
     background-repeat: no-repeat;
     background-size: 20px;
-    
 }
 
 .mic {
@@ -115,8 +106,6 @@ input:hover {
 .button {
     border: none;
     background-color: #f8f9fa; 
-    /* padding: 10px;
-    margin: 5px; */
     font-size: 14px;
     height: 36px;
     text-align: center;
@@ -191,5 +180,4 @@ footer ul li a{
         max-width: 400px;
         margin: 0 auto;
     }
-
 }
